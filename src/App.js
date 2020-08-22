@@ -18,3 +18,8 @@ function App() {
 
 
 export default App;
+Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your src/index.js file:
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
