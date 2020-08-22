@@ -12,10 +12,10 @@ class MyForm extends React.Component {
   render() {
     return (
       <form>
-      <h1>Hello {this.state.username}</h1>
-      <p>Enter your name:</p>
+      <h1>Hello {this.state.sylviaplath}</h1>
+      <p>Sylvia Plath:</p>
       <input
-        type='text'
+        type='visitor'
         onChange={this.myChangeHandler}
       />
       </form>
@@ -31,7 +31,7 @@ ReactDOM.render(<MyForm />, document.getElementById('root'));
     <meta charset="utf-8" />
     <meta name="viewport"
       content="width=device-width, initial-scale=1" />
-    <title>React App</title>
+    <title>Search the Library</title>
   </head>
   <body>
 
@@ -47,16 +47,16 @@ class MyForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mycar: 'Volvo'
+      myauthor: 'Harris'
     };
   }
   render() {
     return (
       <form>
       <select value={this.state.mycar}>
-        <option value="Ford">Ford</option>
-        <option value="Volvo">Volvo</option>
-        <option value="Fiat">Fiat</option>
+        <option value="Harris">Harris</option>
+        <option value="silence">SilenceoftheLambs</option>
+        <option value="synopsis">synopsis</option>
       </select>
       </form>
     );
